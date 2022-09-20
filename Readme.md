@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Муртазали Муртазалиев](https://up.htmlacademy.ru/htmlcss/35/user/1577215).
-* Наставник: [Сергей Зубов] (https://htmlacademy.ru/profile/id208340)
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/id208340)
 
 ---
 

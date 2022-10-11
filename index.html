@@ -3,22 +3,23 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="page-header">
     <div>
-      <img alt="логотип Седона" class="sedona-logo">
+      <img src="img/header/logo.svg" width="140" height="70" alt="логотип Седона" class="sedona-logo">
     </div>
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
+          <a class="navigation-link">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="about.html">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html"> Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -32,62 +33,63 @@
             <span class="visually-hidden">Избранное</span>
           </a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Хочу сюда!</a>
-        </li>
       </ul>
+      <a class="button brown-button" href="#">Хочу сюда!</a>
     </nav>
   </header>
-  <main>
+  <main class="main-index">
     <section class="hero">
       <h1 class="visually-hidden">Sedona</h1>
-      <img alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" class="hero-image" src="#">
+      <img class="hero-image-text" src="img/hero-img/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
     </section>
     <section class="advantages">
-      <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      <h2 class="title advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p class="advantages-title-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       <ul class="advantages-list">
-        <li class="advantages-item">
+        <li class="advantages-item advantages-item-blue">
           <h3 class="advantages-item-title">Настоящий городок</h3>
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img alt="Домик на природе" class="advantages-landscape" src="#">
+          <img alt="Домик на природе" class="advantages-landscape" src="img/advantages-photo-house.jpg" width="800" height="384">
         </li>
-        <li class="advantages-item">
+        <li class="advantages-item advantages-item-light_blue">
           <h3 class="advantages-item-title">Небольшая площадь</h3>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="advantages-item">
+        <li class="advantages-item advantages-item-transparent_blue">
           <h3 class="advantages-item-title">Красивая дорога</h3>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="advantages-item">
+        <li class="advantages-item advantages-item-light_blue">
           <h3 class="advantages-item-title">Мало туристов</h3>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
-          <img alt="Горы" class="advantages-landscape" src="#">
+        </li>
+        <li class="advantages-item advantages-item-blue">
+          <img alt="Горы" class="advantages-landscape" src="img/advantages-photo-mountains.jpg" width="800" height="384">
           <h3 class="advantages-item-title">Там есть мост дьявола</h3>
           <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
-        <li class="advantages-item">
-          <h3 class="advantages-title">Жильё</h3>
+        <li class="advantages-item advantages-item-light_blue">
+          <h3 class="advantages-item-title">Жильё</h3>
           <p>Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
         </li>
         <li class="advantages-item">
           <h3 class="advantages-item-title">Еда</h3>
           <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="advantages-item">
+        <li class="advantages-item advantages-item-light_blue">
           <h3 class="advantages-item-title">Сувениры</h3>
           <p>Не только китайского, но и настоящего местного производства!</p>
         </li>
       </ul>
     </section>
     <section class="interesting">
-      <h2 class="interesting-title">Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p><a href="#">Поиск гостиницы в Седоне</a>
+      <h2 class="title interesting-title">Заинтересовались?</h2>
+      <p class="interesting-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a class="button interesting-button brown-button" href="catalog.html">Поиск гостиницы в Седоне</a>
     </section>
     <section class="subscribe">
-      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
+      <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" method="post">
         <label for="subscribe-email">Email</label>
         <input class="field" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail" type="email">
@@ -100,17 +102,17 @@
     <section class="footer-social">
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="vk-button" href="#">
+          <a class="social-button vk-button" href="#">
             <span class="visually-hidden">Vk</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="telegram-button" href="#">
+          <a class="social-button telegram-button" href="#">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="youtube-button" href="#">
+          <a class="social-button youtube-button" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
@@ -122,7 +124,9 @@
     </section>
     <section class="copyrighter">
       <h3 class="visually-hidden">Разработчик</h3>
-        <img alt="логотип Html-academy" class="html-logo" src="https://htmlacademy.ru">
+      <a href="https://htmlacademy.ru">
+        <span class="visually-hidden">htmlacademy.ru</span>
+      </a>
     </section>
   </footer>
 </body>
